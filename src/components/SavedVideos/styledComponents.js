@@ -71,9 +71,11 @@ export const SavedTitleIconContainer = styled.div`
 
 export const SavedVideoList = styled.ul`
   background-color: ${props => props.bgColor};
+  list-style: none;
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
   min-height: 90vh;
 `

@@ -7,7 +7,6 @@ export const ItemLink = styled(Link)`
 
 export const SavedListItem = styled.div`
   background: none;
-  width: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
@@ -19,7 +18,6 @@ export const SavedListItem = styled.div`
   }
 `
 export const SavedItemThumbNailImage = styled.img`
-  width: 100%;
   @media screen and (min-width: 768px) {
     max-width: 300px;
   }
