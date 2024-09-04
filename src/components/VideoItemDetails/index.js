@@ -112,7 +112,6 @@ class VideoItemDetails extends Component {
 
   renderVideoPlayer = () => {
     const {apiStatus} = this.state
-    console.log(apiStatus)
 
     switch (apiStatus) {
       case apiStatusConstants.success:

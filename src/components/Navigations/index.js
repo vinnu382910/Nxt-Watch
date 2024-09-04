@@ -29,8 +29,6 @@ class Navigations extends Component {
         const bgColor = isDarkTheme ? '#231f20' : '#f1f5f9'
         const color = isDarkTheme ? '#f9f9f9' : '#231f20'
         const activeTabBg = isDarkTheme ? '#475569' : '#cbd5e1'
-        console.log(activeTab)
-
         const onClickTabHome = () => {
           changeActiveTab('Home')
         }

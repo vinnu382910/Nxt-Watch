@@ -13,7 +13,6 @@ const NotFound = () => (
   <ThemeAndVideoContext.Consumer>
     {value => {
       const {isDarkTheme} = value
-      // console.log(savedVideos)
 
       const bgColor = isDarkTheme ? '#181818' : '#f9f9f9'
       const headingColor = isDarkTheme ? '#f1f5f9' : '#1e293b'
