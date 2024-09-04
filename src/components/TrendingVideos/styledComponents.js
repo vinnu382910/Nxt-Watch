@@ -48,5 +48,6 @@ export const SavedVideoList = styled.ul`
   display: flex;
   flex-direction: column;
   margin: 0px;
+  padding-left: 0px;
   min-height: 90vh;
 `
