@@ -47,7 +47,8 @@ const SavedVideoCard = props => {
                       {name}
                     </SavedChannelName>
                     <SavedViewsAndDate color={textColor}>
-                      {viewCount} views<SavedDot> &#8226; </SavedDot>
+                      {viewCount} views
+                      <SavedDot> &#8226; </SavedDot>
                       {publishedAt}
                     </SavedViewsAndDate>
                   </VidoeInfoCont>

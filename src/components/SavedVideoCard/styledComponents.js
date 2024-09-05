@@ -50,7 +50,7 @@ export const VidoeInfoCont = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: flex-start;
@@ -69,6 +69,7 @@ export const SavedChannelName = styled.p`
   font-family: Roboto;
   font-size: 13px;
   color: ${props => props.color};
+  margin-right: 15px;
 `
 export const SavedViewsAndDate = styled.p`
   font-family: Roboto;
@@ -81,4 +82,5 @@ export const SavedDot = styled.span`
   border-radius: 50%;
   padding-left: 5px;
   padding-right: 5px;
+  font-weight: bold;
 `
