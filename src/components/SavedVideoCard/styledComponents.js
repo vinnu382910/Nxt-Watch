@@ -46,11 +46,24 @@ export const SavedContentSection = styled.div`
     padding: 0px;
   }
 `
+export const VidoeInfoCont = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+`
+
 export const SavedTitle = styled.p`
   font-family: Roboto;
   font-size: 15px;
   color: ${props => props.color};
   margin-top: 0px;
+  font-weight: bold;
 `
 export const SavedChannelName = styled.p`
   font-family: Roboto;

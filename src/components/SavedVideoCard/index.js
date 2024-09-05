@@ -6,6 +6,7 @@ import {
   SavedItemThumbNailImage,
   SavedVideoDetails,
   SavedContentSection,
+  VidoeInfoCont,
   SavedProfileImage,
   SavedTitle,
   SavedChannelName,
@@ -41,11 +42,15 @@ const SavedVideoCard = props => {
                 <SavedProfileImage src={profileImageUrl} alt="channel logo" />
                 <SavedContentSection>
                   <SavedTitle color={textColor}>{title}</SavedTitle>
-                  <SavedChannelName color={textColor}>{name}</SavedChannelName>
-                  <SavedViewsAndDate color={textColor}>
-                    {viewCount} views<SavedDot> &#8226; </SavedDot>
-                    {publishedAt}
-                  </SavedViewsAndDate>
+                  <VidoeInfoCont>
+                    <SavedChannelName color={textColor}>
+                      {name}
+                    </SavedChannelName>
+                    <SavedViewsAndDate color={textColor}>
+                      {viewCount} views<SavedDot> &#8226; </SavedDot>
+                      {publishedAt}
+                    </SavedViewsAndDate>
+                  </VidoeInfoCont>
                 </SavedContentSection>
               </SavedVideoDetails>
             </SavedListItem>

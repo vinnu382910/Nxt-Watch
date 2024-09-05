@@ -48,14 +48,15 @@ class TrendingVideos extends Component {
     const response = await fetch(url, options)
     if (response.ok) {
       const data = await response.json()
+      console.log(data)
       const updatedData = data.videos.map(eachVideo => ({
         id: eachVideo.id,
         publishedAt: eachVideo.published_at,
         thumbnailUrl: eachVideo.thumbnail_url,
         title: eachVideo.title,
         viewCount: eachVideo.view_count,
-        channelName: eachVideo.channel.name,
-        channelProfileImg: eachVideo.channel.profile_image_url,
+        name: eachVideo.channel.name,
+        profileImageUrl: eachVideo.channel.profile_image_url,
       }))
       this.setState({
         trendingVideosList: updatedData,
@@ -70,6 +71,7 @@ class TrendingVideos extends Component {
 
   rendertrendingVideosView = () => {
     const {trendingVideosList} = this.state
+    console.log(trendingVideosList[0].thumbnailUrl)
     return (
       <SavedVideoList>
         {trendingVideosList.map(eachVideo => (

@@ -17,10 +17,11 @@ export const GamingListItem = styled.li`
 `
 export const GamingThumbNailImage = styled.img`
   width: 100vw;
-  height: 300px;
+  height: 400px;
   align-self: center;
   @media screen and (min-width: 768px) {
     width: 280px;
+    height: 300px;
   }
 `
 
